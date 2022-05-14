@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Rows</title>
+    <style>
+        .grid-template-rows_grid-template-columns-px{
+            display: grid;
+            grid-template-rows: 50px 100px 50px 150px;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .grid-template-rows_grid-template-columns-fr{
+            display: grid;
+            grid-template-rows: 1fr 2fr 3fr 4fr;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .grid-template-rows_grid-template-columns{
+            display: grid;
+            grid-template-columns: 90px auto 100px;
+            grid-template-rows: 50px 200px auto;
+        }
+
+        /* Estilos Gerais */
+        .item {
+            margin: 5px;
+            background: tomato;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .conteiner {
+            max-width: 400px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.25em;
+            font-weight: normal;
+        }
+
+        body {
+            font-family: monospace;
+            color: #333;
+            padding-bottom: 60px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>grid-template-rows / grid-template-columns <br>
+        50px 100px 50px 150px</h1>
+    <section class="conteiner grid-template-rows_grid-template-columns-px">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </section>
+
+    <h1>grid-template-rows / grid-template-columns <br>
+        1fr 2fr 3fr 4fr </h1>
+    <section class="conteiner grid-template-rows_grid-template-columns-fr">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </section>
+    
+    <h1>grid-template-rows / grid-template-columns</h1>
+    <section class="conteiner grid-template-rows_grid-template-columns">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </section>
+
+</body>
+</html>
